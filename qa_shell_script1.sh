@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#VERSION_FILE=$1
+
 echo "This is shell script for Tester Job1"
 pwd
 date
-#source $VERSION_FILE
-#echo "Build version is:$BUILD_VERSION"
+source build_version.conf
+echo "Build version in Tester Job1 is: ${BUILD_VERSION}"
